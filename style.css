@@ -1,0 +1,72 @@
+td {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+.nav {
+    margin-left: 50px;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > img {
+    width: 20%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.header > h1 {
+    margin-top: 50px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.staff {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.reception {
+    margin: 10px auto;
+    position: relative;
+}
+
+.reception > thead {
+    background-color: #4c4cd5;
+    color: white;
+    border: 4px solid white;
+}
+
+.reception > tbody {
+    background-color: lightblue;
+}
+
+.reception > thead > tr > th {
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
