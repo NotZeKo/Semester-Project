@@ -9,8 +9,9 @@ table {
     border-collapse: separate;
 }
 
-.nav {
-    margin-left: 50px;
+.dashboard {
+    max-width: 1024px;
+    margin:auto;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -47,6 +48,7 @@ table {
 .reception {
     margin: 10px auto;
     position: relative;
+    width: 100%;
 }
 
 .reception > thead {
@@ -63,10 +65,102 @@ table {
     padding: 20px;
 }
 
-.buttons {
+.staffButtons {
     display: flex;
     justify-content: space-between;
 }
 
+.table-active {
+    background-color: green;
+    color: white;
+}
+
+.schedule {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.schedule > h2 {
+    margin-top: 5px;
+}
+
+.delivery {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+}
+
+.delivery > thead {
+    background-color: #4c4cd5;
+    color: white;
+    border: 4px solid white;
+}
+
+.delivery > thead > tr > th {
+    padding: 20px;
+    text-align: center;
+}
+
+.delivery > tbody {
+    background-color: lightblue;
+}
+
+.delivery > tbody > tr > td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.scheduleButtons {
+    display: flex;
+    justify-content: end;
+}
 
 
+.vehicles {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.transport {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+}
+
+.transport > thead {
+    background-color: #4c4cd5;
+    color: white;
+    border: 4px solid white;
+}
+
+.transport > thead > tr > th {
+    padding: 20px;
+    text-align: center;
+}
+
+.transport > tbody {
+    background-color: lightblue;
+}
+
+.transport > tbody > tr > td {
+    padding: 10px;
+}
+
+.vehicles > h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+
+
+
+.clock {
+    max-width: 300px;
+    font-size: 1rem;
+    font-weight: bold;
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+}

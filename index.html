@@ -13,31 +13,46 @@
     <title>WeDeliverTECH</title>
 </head>
 <body>
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Inventory</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Search</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Add</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Remove</a></li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Orders</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Search</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Add</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Remove</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div class="toast-container position-fixed top-0 end-0 p-3"></div>
+    <div class="toast-container position-fixed top-50 end-0 translate-middle-y p-3">
+        <div id="timeoutToast" class="toast bg-danger text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+            <div class="toast-header bg-danger text-white">
+                <img id="toastPicture" src="" alt="User Picture" class="rounded me-2" style="width: 40px; height: 40px;">
+                <strong id="toastName" class="me-auto"></strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <p id="toastMessage"></p>
+            </div>
+        </div>
+    </div>
+    <section class="dashboard">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Inventory</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Search</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Add</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Remove</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Orders</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Search</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Add</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Remove</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
     <div class="header">
         <img src="/imgs/image_transparent_high_res.png" alt="placehold">
         <h1>Reception Management Dashboard</h1>
@@ -63,11 +78,60 @@
                 </tbody>
             </table>
         </div>
-        <div class="buttons">
+        <div class="staffButtons">
             <button type="button" class="btn btn-danger">Out</button>
             <button type="button" class="btn btn-success">In</button>
         </div>
     </section>
+    <section class="schedule">
+        <h2 class="categories">Schedule Delivery</h2>
+        <table class="delivery">
+            <thead>
+            <tr>
+                <th>Vehicle</th>
+                <th>Name:</th>
+                <th>Surname:</th>
+                <th>Telephone:</th>
+                <th>Address:</th>
+                <th>Return time:</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>_______________</td>
+                <td>_______________</td>
+                <td>_______________</td>
+                <td>_____-_____-_____</td>
+                <td>_______________</td>
+                <td>_______:_______</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="scheduleButtons">
+            <button class="btn btn-success">Add</button>
+        </div>
+    </section>
+    <section class="vehicles">
+        <h2>Delivery Board</h2>
+        <table class="transport">
+            <thead>
+                <tr>
+                    <th>Vehicle</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Telephone</th>
+                    <th>Delivery Address</th>
+                    <th>Return time</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="scheduleButtons">
+            <button class="btn btn-danger">Clear</button>
+        </div>
+    </section>
+    <div class="clock"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
